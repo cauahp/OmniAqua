@@ -139,8 +139,8 @@ void verificarHorarios() {
   time_t now = time(nullptr);
   struct tm* infoTempo = localtime(&now);
 
-  // Se o ano for menor que 2024, o NTP ainda não sincronizou
-  if (infoTempo->tm_year < 124) return; 
+  // Se o ano for menor que 2026, o NTP ainda não sincronizou
+  if (infoTempo->tm_year < 126) return; 
 
   int horaAtual = infoTempo->tm_hour;
   int minutoAtual = infoTempo->tm_min;
