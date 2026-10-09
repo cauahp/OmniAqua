@@ -7,7 +7,7 @@
 const char* ssid = "SEU_SSID";
 const char* password = "SUA_SENHA_WIFI";
 
-// Fuso horário de Brasília (UTC-3). Altere se necessário.
+// Fuso horário de Brasília (UTC-3). Alterar se necessário.
 #define TIMEZONE "<-03>3"
 const char* ntpServer = "pool.ntp.org";
 
@@ -179,7 +179,7 @@ void setup() {
 }
 
 void loop() {
-  // Se o Wi-Fi cair, o ESP8266 tenta manter conexões em background, 
+  // Se o Wi-Fi cair, o ESP8266 tenta manter conexões
   // mas o tempo NTP continua avançando via hardware interno.
   
   verificarHorarios();
