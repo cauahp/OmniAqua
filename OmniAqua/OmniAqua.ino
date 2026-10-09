@@ -110,7 +110,7 @@ void verificarHorarios() {
   time_t now = time(nullptr);
   struct tm* infoTempo = localtime(&now);
 
-  // E. estruturas condicionais utilizadas (Valida se o NTP já atualizou com o ano atual de 2026)
+  // E. estruturas condicionais utilizadas (Valida se o NTP já atualizou com o ano)
   if (infoTempo->tm_year < 126) return; 
 
   int horaAtual = infoTempo->tm_hour;
